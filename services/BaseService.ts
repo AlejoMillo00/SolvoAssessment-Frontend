@@ -28,9 +28,9 @@ class BaseService {
   
         return {
           success: false,
-          message: data?.message ?? "",
+          message: data?.message ?? "Unexpected error",
           content: undefined,
-          errors: data.errors,
+          errors: data?.errors ?? [],
           statusCode: axiosError.status || 500
         }
       } else {

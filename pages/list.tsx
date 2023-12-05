@@ -58,7 +58,10 @@ const ListPage = () => {
             const response = await EmployeeService.listAsync()
 
             if(!response.success)
-                return         
+            {
+              console.error(response)
+              return         
+            }
             
             setState(curr => ({...curr, employees: response.content}))
         }
