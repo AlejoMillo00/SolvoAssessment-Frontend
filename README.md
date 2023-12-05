@@ -10,3 +10,7 @@ Make sure to have docker desktop installed on the computer in order to be able t
    <code>npm run docker</code>
    The "docker" is a script already included in the package.json to start the container using the image previously built.
 4. Done! The application is up and running on "http://localhost:3000"
+
+## DESCRIPTION
+
+This is front-end application made with Next.Js 12 for the Solvo assessment where we need a page with a form to create employees and the functionallity of seeing the stored employees.
